@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Game</title>
+    <style>
+        *{
+            background-color: blanchedalmond;
+            font-size: 1.5rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url(https://images.hdqwalls.com/download/material-design-grey-po-1920x1080.jpg);
+            color: whitesmoke;
+        }
+        @media(max-width:775px){
+            *{
+                font-size: 1.2rem;
+            }
+        }
+        @media(max-width:510px){
+            *{
+                font-size: 1rem;
+            }
+        }
+        @media(max-width:360px){
+            *{
+                font-size: 0.92rem;
+            }
+        }
+        .wrapper{
+            width:100%;
+            height:100vh;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            flex-direction: column;
+            background: transparent;
+        }
+        .s{
+            display: flex;
+            flex-wrap: wrap;
+            /* margin-top: 20%; */
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            flex-direction: column;
+        }
+        .s input{
+            background-color: gray;
+            color:whitesmoke;
+            border: 5px solid black;
+            border-radius: 10px;
+            width:40%;
+            padding:1%;
+        }
+        #heading1{
+            font-size: larger;
+            text-decoration: underline;
+            background: transparent;
+            width: 300px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #container{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        button{
+            background-color: gray;
+            color:whitesmoke;
+            border: 5px solid black;
+            border-radius: 10px;
+            width:60%;
+        }
+        #info{
+            font-size: 1rem;
+        }
+        #form-{
+            background: transparent;
+        }
+        div{
+            background: transparent;
+        }
+        input{
+            background: whitesmoke;
+            color:black
+        }
+        label,span,button,h1{
+            background: transparent;
+        }
+        .wrap2{
+            background-color: rgba(0, 0, 0, 0.384);
+            padding: 2.5%;
+            border-radius: 3%;
+        }
+        button{
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="wrap2">
+            <h1 id="heading1">Guess Game</h1>
+        <form id="form-">
+            <label>Guess a Number : </label>
+            <input type="text" placeholder="Guess a number" id="guess"><br><br>
+            <div class="s"><input type="submit" id="submit_btn"></div>
+        </form><br>
+        <div id="container">
+            <div>Previous Guesses : <span id="prevguess"></span></div><br>
+            <div>Guesses Remaining : <span id="guessrem">6</span></div><br>
+            <div><span id="msg"></span></div>
+            <div><span id="endgame"></span></div>
+        </div>
+        </div>
+    </div>
+</body>
+<script src="pro4.js"></script>
+</html>
