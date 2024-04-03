@@ -28,9 +28,11 @@ function validate(userGuess){
 }
 function check(userGuess){
     if(userGuess==random_num){
+        rem=0;
         msg.innerHTML='<h1>Correct!! You Won</h1>'
-        playGame=false;
+        // playGame=false;
         displayprevguess(userGuess);
+        
         endgamehelper();
         
     }
